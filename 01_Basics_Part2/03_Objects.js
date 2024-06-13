@@ -1,30 +1,26 @@
-// singleton
+// Singleton
 // Object.create
 
 // object literals
-
 const mySym = Symbol("key1")
-
-
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "Usman",
+    "full name": "Usman Nasir",
     [mySym]: "mykey1",
     age: 18,
     location: "Jaipur",
-    email: "hitesh@google.com",
+    email: "usman@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
-
 // console.log(JsUser.email)
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 
-JsUser.email = "hitesh@chatgpt.com"
+JsUser.email = "usman@chatgpt.com"
 // Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "usman@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
